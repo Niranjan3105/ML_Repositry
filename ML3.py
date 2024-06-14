@@ -10,13 +10,13 @@ dictionary = df.to_dict()
 a = df['total sulfur dioxide']
 b = [0]*1744
 #print(a)
-#plt.plot(a)
-#plt.show()
+plt.plot(a)
+plt.show()
 print('sklearn : {}'.format(sklearn.__version__))
 #print(df.shape)
 #print(df.describe())
-df.plot(kind ='box', subplots = True, layout = (12,12), sharex = False, sharey = False )
-plt.show()
+#df.plot(kind ='box', subplots = True, layout = (12,12), sharex = False, sharey = False )
+#plt.show()
 print(df.values)
 #print(df.shape())
 
