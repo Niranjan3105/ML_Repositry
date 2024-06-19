@@ -7,8 +7,8 @@ dictionary = df.to_dict()
 #print(df)
 #print(df.columns)
 #print(df['total sulfur dioxide'])
-a = df['free sulfur dioxide']
-b = df['fixed acidity']
+a = df['free sulfur dioxide'].values
+b = df['fixed acidity'].values
 print(a)
 print(b)
 plt.plot(a,b)
