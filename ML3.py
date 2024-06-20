@@ -1,17 +1,17 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import sklearn
-file = 'winequality-red.xlsx'
+file = 'cars2.xlsx'
 df = pd.read_excel(file)
 dictionary = df.to_dict()
 #print(df)
 #print(df.columns)
 #print(df['total sulfur dioxide'])
-a = df['free sulfur dioxide'].values
-b = df['fixed acidity'].values
+a = df['Engine'].values
+b = df['Power'].values
 print(a)
 print(b)
-plt.plot(a,b)
+plt.scatter(a,b)
 plt.show()
 print('sklearn : {}'.format(sklearn.__version__))
 #print(df.shape)
